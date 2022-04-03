@@ -1,5 +1,5 @@
 <script setup>
-import { inject, onMounted, ref, computed } from 'vue';
+import { inject, onMounted, ref, computed, defineProps } from 'vue';
 import Loader from '../components/Loader.vue';
 const { getters, actions } = inject('store');
 

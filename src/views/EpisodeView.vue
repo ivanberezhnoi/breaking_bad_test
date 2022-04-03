@@ -1,5 +1,5 @@
 <script setup>
-import { inject, onMounted, ref } from 'vue';
+import { inject, onMounted, ref, defineProps } from 'vue';
 import { RouterLink } from 'vue-router';
 import CharacterCard from '../components/CharacterCard.vue';
 import Loader from '../components/Loader.vue';

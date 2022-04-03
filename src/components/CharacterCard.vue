@@ -1,5 +1,5 @@
 <script setup>
-import { inject, computed } from 'vue';
+import { inject, computed, defineProps } from 'vue';
 import Card from './Card.vue';
 const { mutations, getters } = inject('store');
 

@@ -1,5 +1,6 @@
 <script setup>
 import Card from './Card.vue';
+import { defineProps } from 'vue';
 
 const { episode } = defineProps({
   episode: {
@@ -19,7 +20,7 @@ const { title, air_date, characters } = episode;
       <p>Дата выхода: {{ air_date }}</p>
       <p>Персонажи:</p>
       <ul>
-        <li v-for="character in characters">
+        <li v-for="character in characters" :key="character">
           {{ character }}
         </li>
       </ul>
